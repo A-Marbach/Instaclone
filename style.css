@@ -1,0 +1,42 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.profil{
+    width:45px !important;
+    height:45px !important;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+input{
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: inherit;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
