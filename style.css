@@ -1,7 +1,5 @@
 body{
     font-family: 'Oswald', sans-serif;
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
 }
 .menu{
     display: flex;
@@ -23,9 +21,12 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 16px;
     margin-left: 250px;
     margin-right: 250px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    
+   
 }
 
 input{
@@ -39,4 +40,89 @@ input{
 .search{
     display: flex;
     align-items: center;
+}
+
+.post-container{
+    border: 1px solid lightgray;
+    width: 650px;
+    margin-left: 250px;
+    margin-top: 25px;
+
+}
+
+.logo-author img{
+    width:45px !important;
+    height:45px !important;
+    border-radius: 50%;
+
+}
+
+.logo-author{
+    display: flex;
+    margin: 10px;
+}
+
+.location{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.location p{
+    font-size: 14px;
+    color: gray;
+    margin-top:0 !important;
+}
+
+.post-image{
+    width: 650px;
+    height: 500px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+}
+
+.icons img{
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.left-icons{
+    display: flex;
+}
+
+.posts{
+    margin-top:25px;
+}
+
+.like{
+    margin-left: 10px;
+    
+}
+
+.like p {
+    margin-block-start: 0em !important;
+}
+
+.heart{
+    background: white;
+}
+
+.author-description{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.description{
+    margin-left: 8px;
+    
+    
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
-<body>
+<body onload="renderPosts()">
 
     <header>
 
@@ -21,12 +21,13 @@
         <img src="img/flugzeugIcon.png">
         <img src="img/kompassIcon.png">
         <img src="img/herzIcon.png">
-        <img class="profil"  src="img/golden-nose-logo.jpg">
+        <img class="profil"  src="img/golden-nose-profil.jpg">
 
     </nav>
 
 
     </header>
     
+    <div class="post-container" id="post-container"></div>
 </body>
 </html>
