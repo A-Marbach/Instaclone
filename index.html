@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +10,84 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
-<body onload="renderPosts()">
+
+<body onload="init()">
 
     <header>
 
-    <h1>Instaclone</h1>
-    <div class="search">
-   <input placeholder="Suchen"></div>
-    <nav class="menu">
-        <img src="img/hausIcon.png">
-        <img src="img/flugzeugIcon.png">
-        <img src="img/kompassIcon.png">
-        <img src="img/herzIcon.png">
-        <img class="profil"  src="img/golden-nose-profil.jpg">
+        <h1>Instaclone</h1>
+        <div class="search">
+            <input class="header-input" placeholder="Suchen">
+        </div>
+        <nav class="menu">
+            <img src="img/hausIcon.png">
+            <img src="img/flugzeugIcon.png">
+            <img src="img/kompassIcon.png">
+            <img src="img/herzIcon.png">
+            <img class="profil" src="img/golden-nose-profil.jpg">
 
-    </nav>
+        </nav>
 
 
     </header>
-    
-    <div class="post-container" id="post-container"></div>
+    <div class="content">
+        
+        <div class="post-container" id="post-container"></div>
+        
+        <div class="right-container">
+            <div class="column">
+                <div class="right-container-profil">
+                    <img class="right-container-logo" src="img/golden-nose-profil.jpg">
+                    <div>
+                        <p>Golden-Nose</p>
+                        <p style="color:gray">Golden-Nose-Perfumes</p>
+                    </div>
+                    <button class="btn">Wechseln</button>
+                </div>
+                <div class="right-container-profil">
+                    <img class="right-container-follow" src="img/fifaProfil.jpg">
+                    <div>
+                        <p>Fifa World</p>
+                        <p style="color:gray">Follows you</p>
+                    </div>
+                    <button id="abo" onclick="abonnened()" class="btn">Abonnieren</button>
+                </div>
+                <div class="right-container-profil">
+                    <img class="right-container-follow" src="img/al-jazeera-profil.jpg">
+                    <div>
+                        <p>Al Jazeera</p>
+                        <p style="color:gray">Follows you</p>
+                    </div>
+                    <button id="abo1"  onclick="abonnened1()" class="btn">Abonnieren</button>
+                </div>
+                <div class="right-container-profil">
+                    <img class="right-container-follow" src="img/metropole1.jpg">
+                    <div>
+                        <p>John Miller</p>
+                        <p style="color:gray">Follows you</p>
+                    </div>
+                    <button id="abo2"   onclick="abonnened2()" class="btn">Abonnieren</button>
+                </div>
+                <div class="right-container-profil">
+                    <img class="right-container-follow" src="img/fifa1.jpg">
+                    <div>
+                        <p>Steven Gibson</p>
+                        <p style="color:gray">Follows you</p>
+                    </div>
+                    <button id="abo3"   onclick="abonnened3()" class="btn">Abonnieren</button>
+                </div>
+                <div class="right-container-profil">
+                    <img class="right-container-follow" src="img/metropole2.jpg">
+                    <div>
+                        <p>George Kingpin</p>
+                        <p style="color:gray">Follows you</p>
+                    </div>
+                    <button id="abo4"   onclick="abonnened4()" class="btn">Abonnieren</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

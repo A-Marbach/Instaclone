@@ -1,11 +1,18 @@
-body{
+body {
     font-family: 'Oswald', sans-serif;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
+
 }
-.menu img{
+
+h1{
+    cursor: pointer;
+}
+
+.menu img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -13,23 +20,26 @@ body{
     cursor: pointer;
 }
 
-.profil{
-    width:45px !important;
-    height:45px !important;
+.profil {
+    width: 45px !important;
+    height: 45px !important;
     border-radius: 50%;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
-    margin-left: 250px;
-    margin-right: 250px;
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
-    
-   
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
-input{
+.header-input {
     width: 300px;
     height: 35px;
     text-align: center;
@@ -37,92 +47,183 @@ input{
     cursor: inherit;
 }
 
-.search{
+.search {
     display: flex;
     align-items: center;
 }
 
-.post-container{
-    border: 1px solid lightgray;
-    width: 650px;
+.content {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.right-container {
+    display: flex;
+    width: 100%;
+    padding-right: 250px;
+}
+
+.column {
+    height: 500px;
+    margin-left: 55px;
+    position: sticky;
+    top: 175px;
+    width: 100%;
+}
+
+.right-container-profil {
+    display: flex;
+    justify-content: space-between;
+    border-color: none;
+    margin-bottom: 36px;
+}
+
+
+
+.right-container-profil p {
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.right-container-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.right-container-follow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-red {
+    color: red;
+
+}
+
+.post-container {
     margin-left: 250px;
     margin-top: 25px;
-
+    
+    
 }
 
-.logo-author img{
-    width:45px !important;
-    height:45px !important;
+.logo-author img {
+    width: 45px !important;
+    height: 45px !important;
     border-radius: 50%;
-
 }
 
-.logo-author{
+.logo-author {
     display: flex;
     margin: 10px;
 }
 
-.location{
+.location {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
 }
 
-.location p{
+.location p {
     font-size: 14px;
     color: gray;
-    margin-top:0 !important;
+    margin-top: 0 !important;
 }
 
-.post-image{
+.post-image {
     width: 650px;
     height: 500px;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     object-fit: cover;
 }
 
-.icons img{
+.icons img {
     width: 30px;
     margin: 10px;
     cursor: pointer;
 }
 
-.left-icons{
+.left-icons {
     display: flex;
 }
 
-.posts{
-    margin-top:25px;
+.posts {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border: 1px solid lightgray;
+    background-color: white;
 }
 
-.like{
+.like {
     margin-left: 10px;
-    
 }
 
 .like p {
     margin-block-start: 0em !important;
 }
 
-.heart{
+.heart {
     background: white;
 }
 
-.author-description{
+.author-description {
     display: flex;
     align-items: center;
     margin-left: 10px;
 }
 
-.description{
+.description {
     margin-left: 8px;
-    
-    
+}
+.comments{
+    display: flex;
+}
+
+.comments p {
+    margin-left: 10px;
+}
+
+.comment-post{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.comment-post input{
+    border: none;
+    margin-left: 12px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comment-post-btn{
+    border: none;
+    background: white;
+    color: lightblue;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 12px;
 }

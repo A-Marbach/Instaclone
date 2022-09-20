@@ -45,6 +45,9 @@ let posts= [{
     }
 ];
 
+function init(){
+    renderPosts();
+}
 
 function renderPosts(){
     document.getElementById('post-container').innerHTML ='';
@@ -76,25 +79,86 @@ function generatePost(postArray, i){
                     <img src="img/hausIcon.png">
                 </div>
         </div>
-        <div id="like&comment" class="like">
+        <div class="like">
             <p>${postArray['likes']} Likes </p>
         </div>
         <div class="author-description">
             <div><b>${postArray['author']}:</b></div>
             <div class="description">${postArray['description']}</div>
         </div>
+
+        <div id="comment${i}" class="comments">
+            <p><b>Name:</b></p>
+           <p>${postArray['comments']}</p>
+        </div>
+        <form onsubmit="addComment(i)">
+            <div class="comment-post">
+                <input required id="comment${i}" placeholder="Kommentar hinzufügen..." ><button  class="comment-post-btn">Post</button>
+            </div>
+        </form>
     </div>
     `;
-
+    
 }
 
+
 function getLike(i){
-document.getElementById(`heart${[i]}`).style.backgroundColor = 'red';
-   /* posts[index]['likes'].push(index)++;
+document.getElementById(`heart${[i]}`).src= 'img/herz-rot.png';
+
+
+ /* posts.likes[index](i)++;
+  renderPosts();
+
+  posts[i].likes.push(posts[i].likes)++;
+
+/* posts[index]likes[index].push++;
     renderPosts();
     */
 }
 
-function generateLikeComment(){
+function renderComments(){
+    let comment = document.getElementById(`comment${i}`);
+    comment.innerHTML ='';
+    for (let i = 0; i < posts['comments'].length; i++) {
+        const element = posts['comments'][i];
+        comment.innerHTML +=`
+        <p>${comment}</p>
+        <button>Answer</button>
+    `;
+    }
+}
+
+function addComment(i){
+    let comment = document.getElementById(`comment${i}`);
+    posts[i].comments.push(comment.value);
+    comment.innerHTML = '';
+
+    renderPosts();
+}
+
+function abonnened(){
+    document.getElementById('abo').classList.add('btn-red');
+    document.getElementById('abo').innerHTML = 'Abonniert';
+
     
+}
+
+function abonnened1(){
+    document.getElementById('abo1').classList.add('btn-red');
+    document.getElementById('abo1').innerHTML = 'Abonniert';
+}
+
+function abonnened2(){
+    document.getElementById('abo2').classList.add('btn-red');
+    document.getElementById('abo2').innerHTML = 'Abonniert';
+}
+
+function abonnened3(){
+    document.getElementById('abo3').classList.add('btn-red');
+    document.getElementById('abo3').innerHTML = 'Abonniert';
+}
+
+function abonnened4(){
+    document.getElementById('abo4').classList.add('btn-red');
+    document.getElementById('abo4').innerHTML = 'Abonniert';
 }
